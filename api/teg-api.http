@@ -1,0 +1,6 @@
+@teg_api_HostAddress = http://localhost:5284
+
+GET {{teg_api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
