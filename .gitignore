@@ -1,0 +1,280 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Start of NextJS
+
+# dependencies
+./ui/app/node_modules
+./ui/app/target
+./ui/app/dist
+./ui/app/logs
+./ui/app/public
+./ui/app/.cache
+./ui/app/.vscode
+./ui/app/.idea
+
+./ui/app/.pnp
+./ui/app/.pnp.*
+./ui/app/.yarn/*
+./ui/app/!.yarn/patches
+./ui/app/!.yarn/plugins
+./ui/app/!.yarn/releases
+./ui/app/!.yarn/versions
+
+# testing
+./ui/app/coverage
+
+# next.js
+./ui/app/.next/
+./ui/app/out/
+
+# production
+./ui/app/build
+
+# misc
+./ui/app/.DS_Store
+./ui/app/*.pem
+
+# debug
+./ui/app/npm-debug.log*
+./ui/app/yarn-debug.log*
+./ui/app/yarn-error.log*
+./ui/app/.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+./ui/app/.env*
+
+# vercel
+./ui/app/.vercel
+
+# typescript
+./ui/app/*.tsbuildinfo
+./ui/app/next-env.d.ts
+
+# End of NextJS
+
+# Start of .Net
+
+# The following command works for downloading when using Git for Windows:
+# curl -LOf http://gist.githubusercontent.com/kmorcinek/2710267/raw/.gitignore
+#
+# Download this file using PowerShell v3 under Windows with the following comand:
+# Invoke-WebRequest https://gist.githubusercontent.com/kmorcinek/2710267/raw/ -OutFile .gitignore
+#
+# or wget:
+# wget --no-check-certificate http://gist.githubusercontent.com/kmorcinek/2710267/raw/.gitignore
+
+# User-specific files
+./api/*.suo
+./api/*.user
+./api/*.sln.docstates
+
+# Build results
+./api/[Dd]ebug/
+./api/[Rr]elease/
+./api/x64/
+./api/[Bb]in/
+./api/[Oo]bj/
+# build folder is nowadays used for build scripts and should not be ignored
+#build/
+
+# NuGet Packages
+./api/*.nupkg
+# The packages folder can be ignored because of Package Restore
+./api/**/packages/*
+# except build/, which is used as an MSBuild target.
+./api/!**/packages/build/
+# Uncomment if necessary however generally it will be regenerated when needed
+#!**/packages/repositories.config
+
+# MSTest test Results
+./api/[Tt]est[Rr]esult*/
+./api/[Bb]uild[Ll]og.*
+
+./api/*_i.c
+./api/*_p.c
+./api/*.ilk
+./api/*.meta
+./api/*.obj
+./api/*.pch
+./api/*.pdb
+./api/*.pgc
+./api/*.pgd
+./api/*.rsp
+./api/*.sbr
+./api/*.tlb
+./api/*.tli
+./api/*.tlh
+./api/*.tmp
+./api/*.tmp_proj
+./api/*.log
+./api/*.vspscc
+./api/*.vssscc
+./api/.builds
+./api/*.pidb
+./api/*.scc
+
+# Visual C++ cache files
+./api/ipch/
+./api/*.aps
+./api/*.ncb
+./api/*.opensdf
+./api/*.sdf
+./api/*.cachefile
+
+# Visual Studio profiler
+./api/*.psess
+./api/*.vsp
+./api/*.vspx
+
+# Guidance Automation Toolkit
+./api/*.gpState
+
+# ReSharper is a .NET coding add-in
+./api/_ReSharper*/
+./api/*.[Rr]e[Ss]harper
+
+# TeamCity is a build add-in
+./api/_TeamCity*
+
+# DotCover is a Code Coverage Tool
+./api/*.dotCover
+
+# NCrunch
+./api/*.ncrunch*
+./api/.*crunch*.local.xml
+
+# Installshield output folder
+./api/[Ee]xpress/
+
+# DocProject is a documentation generator add-in
+./api/DocProject/buildhelp/
+./api/DocProject/Help/*.HxT
+./api/DocProject/Help/*.HxC
+./api/DocProject/Help/*.hhc
+./api/DocProject/Help/*.hhk
+./api/DocProject/Help/*.hhp
+./api/DocProject/Help/Html2
+./api/DocProject/Help/html
+
+# Click-Once directory
+./api/publish/
+
+# Publish Web Output
+./api/*.Publish.xml
+
+# Windows Azure Build Output
+csx
+./api/*.build.csdef
+
+# Windows Store app package directory
+./api/AppPackages/
+
+# Others
+./api/*.Cache
+./api/ClientBin/
+./api/[Ss]tyle[Cc]op.*
+./api/~$*
+./api/*~
+./api/*.dbmdl
+./api/*.[Pp]ublish.xml
+./api/*.pfx
+./api/*.publishsettings
+./api/modulesbin/
+./api/tempbin/
+
+# EPiServer Site file (VPP)
+./api/AppData/
+
+# RIA/Silverlight projects
+./api/Generated_Code/
+
+# Backup & report files from converting an old project file to a newer
+# Visual Studio version. Backup files are not needed, because we have git ;-)
+./api/_UpgradeReport_Files/
+./api/Backup*/
+./api/UpgradeLog*.XML
+./api/UpgradeLog*.htm
+
+# vim
+./api/*.txt~
+./api/*.swp
+./api/*.swo
+
+# Temp files when opening LibreOffice on ubuntu
+./api/.~lock.*
+ 
+# svn
+./api/.svn
+
+# CVS - Source Control
+./api/**/CVS/
+
+# Remainings from resolving conflicts in Source Control
+./api/*.orig
+
+# SQL Server files
+./api/**/App_Data/*.mdf
+./api/**/App_Data/*.ldf
+./api/**/App_Data/*.sdf
+
+
+#LightSwitch generated files
+./api/GeneratedArtifacts/
+./api/_Pvt_Extensions/
+./api/ModelManifest.xml
+
+# =========================
+# Windows detritus
+# =========================
+
+# Windows image file caches
+./api/Thumbs.db
+./api/ehthumbs.db
+
+# Folder config file
+./api/Desktop.ini
+
+# Recycle Bin used on file shares
+./api/$RECYCLE.BIN/
+
+# OS generated files #
+./api/Icon?
+
+# Mac desktop service store files
+./api/.DS_Store
+
+# SASS Compiler cache
+./api/.sass-cache
+
+# Visual Studio 2014 CTP
+./api/**/*.sln.ide
+
+# Visual Studio temp something
+./api/.vs/
+
+# dotnet stuff
+./api/project.lock.json
+
+# VS 2015+
+./api/*.vc.vc.opendb
+./api/*.vc.db
+
+# Rider
+./api/.idea/
+
+# Visual Studio Code
+./api/.vscode/
+
+# Output folder used by Webpack or other FE stuff
+./api/**/node_modules/*
+./api/**/wwwroot/*
+
+# SpecFlow specific
+./api/*.feature.cs
+./api/*.feature.xlsx.*
+./api/*.Specs_*.html
+
+# UWP Projects
+./api/AppPackages/
+
+# End of .Net
