@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "wkI9wruVz30=",
+  "dgSpecHash": "FYNKMadBSLg=",
   "success": true,
-  "projectFilePath": "/workspaces/teg-coding-exam/api/teg-api.csproj",
+  "projectFilePath": "/workspaces/teg-exam/api/teg-api.csproj",
   "expectedPackageFiles": [
-    "/home/vscode/.nuget/packages/microsoft.aspnetcore.openapi/8.0.16/microsoft.aspnetcore.openapi.8.0.16.nupkg.sha512",
+    "/home/vscode/.nuget/packages/microsoft.aspnetcore.openapi/8.0.18/microsoft.aspnetcore.openapi.8.0.18.nupkg.sha512",
     "/home/vscode/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/home/vscode/.nuget/packages/microsoft.openapi/1.6.14/microsoft.openapi.1.6.14.nupkg.sha512",
     "/home/vscode/.nuget/packages/swashbuckle.aspnetcore/6.6.2/swashbuckle.aspnetcore.6.6.2.nupkg.sha512",

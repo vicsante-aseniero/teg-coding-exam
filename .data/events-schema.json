@@ -1,0 +1,62 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "EventListing",
+    "description": "A listing of all events and associated venue information in the TEG metaverse",
+    "type": "object",
+    "properties": {
+        "events": {
+            "type": "array",
+            "description": "A listing of events",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "number",
+                        "description": "A unique ID assigned to this event."
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "The name of the event assigned to this event."
+                    },
+                    "description": {
+                        "type": "string",
+                        "description": "A more verbose summary, describing the nature of the event; has been known to be hyped up :)"
+                    },
+                    "startDate": {
+                        "type": "string",
+                        "description": "An ISO date that shows the event start date and time."
+                    },
+                    "venueId": {
+                        "type": "number",
+                        "description": "A reference ID that can be used to look up more venue information."
+                    }
+                }
+            }
+        },
+        "venues": {
+            "type": "array",
+            "description": "A listing of venues that have events on",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "number",
+                        "description": "A unique ID assigned to this venue."
+                    },
+                    "name": {
+                        "type": "string",
+                        "description": "The name of the venue."
+                    },
+                    "capacity": {
+                        "type": "number",
+                        "description": "The number of patrons that this venue supports"
+                    },
+                    "location": {
+                        "type": "string",
+                        "description": "A free text descriptor of the venue's location. These are not geo coordinates."
+                    }
+                }
+            }
+        }
+    }
+}
