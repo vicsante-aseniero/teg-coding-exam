@@ -1,56 +1,42 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Start of NextJS
+# Start of Angular
 
-# dependencies
-./ui/app/node_modules
-./ui/app/target
-./ui/app/dist
-./ui/app/logs
-./ui/app/public
-./ui/app/.cache
-./ui/app/.vscode
-./ui/app/.idea
+# Compiled output
+./ui/dist
+./ui/tmp
+./ui/out-tsc
 
-./ui/app/.pnp
-./ui/app/.pnp.*
-./ui/app/.yarn/*
-./ui/app/!.yarn/patches
-./ui/app/!.yarn/plugins
-./ui/app/!.yarn/releases
-./ui/app/!.yarn/versions
+# Node modules
+./ui/node_modules
 
-# testing
-./ui/app/coverage
+# IDE-specific files
+./ui/.idea/
+./ui/.vscode/
+./ui/*.iml
+./ui/*.iws
+./ui/.project
+./ui/.classpath
+./ui/.settings/
 
-# next.js
-./ui/app/.next/
-./ui/app/out/
+# Environment variables
+./ui/.env
+./ui/.env.*.local
 
-# production
-./ui/app/build
+# Log files
+./ui/*.log
+./ui/npm-debug.log*
+./ui/yarn-debug.log*
+./ui/yarn-error.log*
+./ui/.pnpm-debug.log*
 
-# misc
-./ui/app/.DS_Store
-./ui/app/*.pem
+# Test coverage
+./ui/coverage
 
-# debug
-./ui/app/npm-debug.log*
-./ui/app/yarn-debug.log*
-./ui/app/yarn-error.log*
-./ui/app/.pnpm-debug.log*
+# Angular specific
+./ui/.angular/cache
 
-# env files (can opt-in for committing if needed)
-./ui/app/.env*
-
-# vercel
-./ui/app/.vercel
-
-# typescript
-./ui/app/*.tsbuildinfo
-./ui/app/next-env.d.ts
-
-# End of NextJS
+# End of Angular
 
 # Start of .Net
 
@@ -167,7 +153,7 @@ csx
 ./api/*.build.csdef
 
 # Windows Store app package directory
-./api/AppPackages/
+./apiPackages/
 
 # Others
 ./api/*.Cache
@@ -183,7 +169,7 @@ csx
 ./api/tempbin/
 
 # EPiServer Site file (VPP)
-./api/AppData/
+./apiData/
 
 # RIA/Silverlight projects
 ./api/Generated_Code/
@@ -213,9 +199,9 @@ csx
 ./api/*.orig
 
 # SQL Server files
-./api/**/App_Data/*.mdf
-./api/**/App_Data/*.ldf
-./api/**/App_Data/*.sdf
+./api/**_Data/*.mdf
+./api/**_Data/*.ldf
+./api/**_Data/*.sdf
 
 
 #LightSwitch generated files
@@ -275,6 +261,6 @@ csx
 ./api/*.Specs_*.html
 
 # UWP Projects
-./api/AppPackages/
+./apiPackages/
 
 # End of .Net

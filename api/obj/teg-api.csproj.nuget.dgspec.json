@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/workspaces/teg-coding-exam/api/teg-api.csproj": {}
+    "/workspaces/teg-exam/api/teg-api.csproj": {}
   },
   "projects": {
-    "/workspaces/teg-coding-exam/api/teg-api.csproj": {
+    "/workspaces/teg-exam/api/teg-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/workspaces/teg-coding-exam/api/teg-api.csproj",
+        "projectUniqueName": "/workspaces/teg-exam/api/teg-api.csproj",
         "projectName": "teg-api",
-        "projectPath": "/workspaces/teg-coding-exam/api/teg-api.csproj",
+        "projectPath": "/workspaces/teg-exam/api/teg-api.csproj",
         "packagesPath": "/home/vscode/.nuget/packages/",
-        "outputPath": "/workspaces/teg-coding-exam/api/obj/",
+        "outputPath": "/workspaces/teg-exam/api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/vscode/.nuget/NuGet/NuGet.Config"
@@ -45,7 +45,7 @@
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
-              "version": "[8.0.16, )"
+              "version": "[8.0.18, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -71,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.410/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.412/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
